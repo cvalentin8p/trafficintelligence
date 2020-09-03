@@ -1,6 +1,6 @@
 To get the code, please go to http://132.207.98.161:3000/ to access the mercurial repository. The code can be cloned with the following command:
 
-$ hg clone http://132.207.98.161:3000/
+$ hg clone http://132.207.98.161:3000/ <destination directory>
 
 The wiki will be put back here.
 
