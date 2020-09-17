@@ -1,5 +1,7 @@
-= Traffic Intelligence Project =
-== News ==
+Traffic Intelligence Project
+==============
+
+# News
 * After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solution I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self hosted for now at http://132.207.98.161:3000. I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
 * February 2nd 2019: The C++ code has been updated to OpenCV4 (you also need to update the [trajectory management and analysis library](https://bitbucket.org/trajectories/trajectorymanagementandanalysis)). Python code seem to need no update as tests are passed. 
 * June 15th 2018: The Python code is now put in a trafficintelligence package (namespace) and can be installed in your Python dist-packages using pip.
@@ -9,7 +11,7 @@
 
 To receive automatically updates and announcements, please register on the [Yahoo Group](https://groups.yahoo.com/neo/groups/traffic-intelligence): it is lightly used, but I have not decided whether to keep it or not.
 
-== Introduction ==
+# Introduction
 
 Welcome the homepage of the Traffic Intelligence project. This software project provides a set of tools developed by [Nicolas Saunier](https://nicolas.saunier.confins.net) and his collaborators for transportation data processing, in particular road traffic, motorized and non-motorized. The project consists in particular in tools for the most typical transportation data type, trajectories, i.e. temporal series of positions. The original work targeted automated road safety analysis using video sensors. 
 
@@ -21,7 +23,7 @@ This software is being developed for many projects and purposes. This project co
 *** scripts for specific tasks, e.g. tools to visualize data or examples of data processing ([[Description of Scripts|list of scripts with short description]]) 
 ** some basic code for simple traffic engineering problems (fundamental diagram and traffic signal timing)
 
-== Guides ==
+# Guides
 
 * **[[Frequently Asked Questions|FAQ]]**
 * Compilation and programming environment
@@ -41,21 +43,21 @@ This software is being developed for many projects and purposes. This project co
 ** (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
 ** (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
 
-== Compiled Video Analysis Binary for Windows ==
+# Compiled Video Analysis Binary for Windows
 
 Linux is the preferred development platform. All Python code should work on all platforms where the required Python libraries are available. 
 
-Very old: An old 32 bit Windows binary for the tracker exists on the [[https://bitbucket.org/Nicolas/trafficintelligence/downloads|Downloads]] page (using the [[https://bitbucket.org/Nicolas/trafficintelligence/downloads/win32-depends.zip|provided compiled libraries]]), but has not been updated. Please volunteer to contribute Windows binaries for the tracker.
+Very old: An old 32 bit Windows binary for the tracker used to exist on the https://bitbucket.org/Nicolas/trafficintelligence/downloads (using the https://bitbucket.org/Nicolas/trafficintelligence/downloads/win32-depends.zip), but has not been updated. Please volunteer to contribute Windows binaries for the tracker.
 
-== Contribution ==
+# Contribution
 
 We are very interested in outside contributions and to start a collective effort to make video analysis more accessible and widespread in transportation applications. Do not hesitate to contact [Nicolas Saunier](https://nicolas.saunier.confins.net) and to give **feedback** on the code, documentation, etc. **When you find an error** and have a workaround, please send a message about the error so that others will not be stuck in the same place. 
 
-== License ==
+# License
 
 The code is licensed under the [MIT open source license](http://www.opensource.org/licenses/mit-license).
 
-== Acknowledgement ==
+# Acknowledgement
 
 Funding for these developments comes partially through the funding of the students listed on the [[Collaborators|collaborators' page]], supported by NSERC Grant No 402320-2011, FRQNT-MTQ-FRQS grant 2012-SO-163493 (road safety research program 2011-2014) and several MTQ research contracts.
 
