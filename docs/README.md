@@ -7,7 +7,7 @@ Traffic Intelligence Project
 * June 15th 2018: The Python code is now put in a trafficintelligence package (namespace) and can be installed in your Python dist-packages using pip.
 * June 13th 2018: Re-uploading the Laurier sample data and adding an example of videor with lens distortion, plus a metadata.sqlite file
 * May 27th 2018: Brand new version with latest OpenCV3 and Python3 support. Please report bugs!
-* Past [[Past News|News]]
+* [Past News](past-news.md)
 
 To receive automatically updates and announcements, please register on the [Yahoo Group](https://groups.yahoo.com/neo/groups/traffic-intelligence): it is lightly used, but I have not decided whether to keep it or not.
 
