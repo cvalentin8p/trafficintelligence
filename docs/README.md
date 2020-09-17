@@ -19,29 +19,28 @@ This software is being developed for many projects and purposes. This project co
 
 * C++ code under the c and include directories: a feature-based moving object tracking tool (and very old examples of the use of the [OpenCV](https://opencv.org) and [KLT libraries](https://www.ces.clemson.edu/~stb/klt))
 * Python modules for several applications
-** classes for trajectories and moving objects (objects with some characteristics and a series of time-stamped positions): this growing body of code allows the interpretation of trajectory data produced by the C++ video analysis code
-*** scripts for specific tasks, e.g. tools to visualize data or examples of data processing ([[Description of Scripts|list of scripts with short description]]) 
-** some basic code for simple traffic engineering problems (fundamental diagram and traffic signal timing)
+  * classes for trajectories and moving objects (objects with some characteristics and a series of time-stamped positions): this growing body of code allows the interpretation of trajectory data produced by the C++ video analysis code
+    * scripts for specific tasks, e.g. tools to visualize data or examples of data processing ([[Description of Scripts|list of scripts with short description]]) 
+  * some basic code for simple traffic engineering problems (fundamental diagram and traffic signal timing)
 
 # Guides
 
 * **[[Frequently Asked Questions|FAQ]]**
 * Compilation and programming environment
-** [Programming style guide](http://wiki.polymtl.ca/transport/index.php/ProgrammingStyle)
-** [[Compile the C++ Code|Compilation instructions]] for the C++ code, in particular feature-based tracking
-** [[Install and Use the Python Modules and Scripts|How to use the provided Python modules and scripts
-]]: how to install a Python scientific distribution with the right modules, get and install the Python modules and scripts of Traffic Intelligence.
-** [[How to update configuration file|How to update configuration files]] (when a new program version requires to change the configuration file)
+  * [Programming style guide](http://wiki.polymtl.ca/transport/index.php/ProgrammingStyle)
+  * [[Compile the C++ Code|Compilation instructions]] for the C++ code, in particular feature-based tracking
+  * [[Install and Use the Python Modules and Scripts|How to use the provided Python modules and scripts]]: how to install a Python scientific distribution with the right modules, get and install the Python modules and scripts of Traffic Intelligence.
+  * [[How to update configuration file|How to update configuration files]] (when a new program version requires to change the configuration file)
 * Data formats
-** [[Data Formats|Data formats]], especially the tables and fields in SQLite
+  * [[Data Formats|Data formats]], especially the tables and fields in SQLite
 * Step-by-step examples:
-** [[Camera Calibration|Tutorial and information]] on camera calibration, homographies (how to use the provided script to create a homography) and distortion
-** [[Tutorial for Video Tracking|Tutorial]] to extract road user trajectories from video data
-** [[Trajectory Extraction Workflow|Typical workflow]] to extract road user trajectories
-** (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
-** (Python) [[Loading Trajectory Data Extracted from Video using Python Libraries|Load and visualize some video tracking results]]
-** (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
-** (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
+  * [[Camera Calibration|Tutorial and information]] on camera calibration, homographies (how to use the provided script to create a homography) and distortion
+  * [[Tutorial for Video Tracking|Tutorial]] to extract road user trajectories from video data
+  * [[Trajectory Extraction Workflow|Typical workflow]] to extract road user trajectories
+  * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
+  * (Python) [[Loading Trajectory Data Extracted from Video using Python Libraries|Load and visualize some video tracking results]]
+  * (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
+  * (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
 
 # Compiled Video Analysis Binary for Windows
 
