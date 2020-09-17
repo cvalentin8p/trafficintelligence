@@ -2,7 +2,7 @@ To get the code, please go to http://132.207.98.161:3000/ to access the mercuria
 
 $ hg clone http://132.207.98.161:3000/ <destination directory>
 
-The wiki will be put back here.
+The documentation (previously wiki) is coming back in the ./docs sub-folder.
 
 ---
 This software project provides a set of tools developed by Nicolas
