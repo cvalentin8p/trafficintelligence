@@ -2,7 +2,7 @@ Traffic Intelligence Project
 ==============
 
 # News
-* After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solution I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self hosted for now at http://132.207.98.161:3000. I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
+* After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solution I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self hosted for now at [http://132.207.98.161:3000](http://132.207.98.161:3000). I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
 * February 2nd 2019: The C++ code has been updated to OpenCV4 (you also need to update the [trajectory management and analysis library](https://bitbucket.org/trajectories/trajectorymanagementandanalysis)). Python code seem to need no update as tests are passed. 
 * June 15th 2018: The Python code is now put in a trafficintelligence package (namespace) and can be installed in your Python dist-packages using pip.
 * June 13th 2018: Re-uploading the Laurier sample data and adding an example of videor with lens distortion, plus a metadata.sqlite file
