@@ -9,8 +9,8 @@ The objective of this tutorial is to present a step-by-step tutorial on the extr
 
 Here are finally some elements to understand the tracking parameters (that can be provided in the configuration file or on the command line):
 * The feature detection and tracking parameters are the same as the two OpenCV functions on which they are based (with similar names):
-** [goodFeaturesToTrack](https://docs.opencv.org/4.5.0/dd/d1a/group__imgproc__feature.html#ga1d6bb77486c8f92d79c8793ad995d541)
-** [calcOpticalFlowPyrLK](http://docs.opencv.org/4.5.0/dc/d6b/group__video__track.html#ga473e4b886d0bcc6b65831eb88ed93323)
+	* [goodFeaturesToTrack](https://docs.opencv.org/4.5.0/dd/d1a/group__imgproc__feature.html#ga1d6bb77486c8f92d79c8793ad995d541)
+	* [calcOpticalFlowPyrLK](http://docs.opencv.org/4.5.0/dc/d6b/group__video__track.html#ga473e4b886d0bcc6b65831eb88ed93323)
 * The other important parameters are the grouping parameter, connection and segmentation distance, and can be understood from the [CRV 2006 paper](http://n.saunier.free.fr/saunier/stock/saunier06feature-based.pdf). If a homography is provided, the connection and segmentation parameters are in the same distance units and directly measure that features are connected to each other when detected, and the threshold over the difference between the maximum and minimum feature distances will disconnect two features, ie put them in two different objects). So the connection distance should be of the order of magnitude of the object of interest, eg 2 m for a car, and segmentation distance should be lower). 
 
 To evaluate performance, see [[Tracking Performance|tracking performance]].
