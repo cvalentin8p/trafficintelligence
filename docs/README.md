@@ -25,7 +25,7 @@ This software is being developed for many projects and purposes. This project co
 
 # Guides
 
-* **[[Frequently Asked Questions|FAQ]]**
+* **[Frequently Asked Questions](faq.md)**
 * Compilation and programming environment
     * [Programming style guide](http://wiki.polymtl.ca/transport/index.php/ProgrammingStyle)
     * [[Compile the C++ Code|Compilation instructions]] for the C++ code, in particular feature-based tracking
@@ -34,9 +34,9 @@ This software is being developed for many projects and purposes. This project co
 * Data formats
     * [[Data Formats|Data formats]], especially the tables and fields in SQLite
 * Step-by-step examples:
-    * [[Camera Calibration|Tutorial and information]] on camera calibration, homographies (how to use the provided script to create a homography) and distortion
-    * [[Tutorial for Video Tracking|Tutorial]] to extract road user trajectories from video data
-    * [[Trajectory Extraction Workflow|Typical workflow]] to extract road user trajectories
+    * [Tutorial and information](camera-calibration.md) on camera calibration, homographies (how to use the provided script to create a homography) and distortion
+    * [Tutorial](video-tracking-tutorial.md) to extract road user trajectories from video data
+    * [Typical workflow](trajectory-extraction-workflow.md) to extract road user trajectories
     * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
     * (Python) [[Loading Trajectory Data Extracted from Video using Python Libraries|Load and visualize some video tracking results]]
     * (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
