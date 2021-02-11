@@ -24,9 +24,15 @@ You can see, as shown below, the points used to obtain the provided homography m
 
 If you are correcting the camera distortion, you have to provide the necessary information (camera matrix and distortion coefficient) when computing the homography, which will be between the corrected image (in ideal point coordinates, non scaled as if seen by a camera) and the world plane. Sample calibrated camera matrices and coefficient coefficients are provided on http://www.polymtl.ca/wikitransport/index.php?title=Equipment#Camera_Matrices_and_Distortion_Coefficients and in metadata files (to be added). 
 
-## To Rewrite and Improve
-Information on mask, camera distortion, extracting frames.
-* use a video player, like VLC, to record a given image from a video (VLC -> Pause video at a good frame (without many vehicles hiding the identified points -> Video menu -> Take Snapshot; usually stored in the Pictures folder)
-* A mask file an image in the exact same resolution as the video (even if correcting for distortion). White pixels correspond to tracking, black to no tracking. To generate it, I typically use and recommend an image manipulation program with layers a la Photoshop, eg Paint.net on Windows and GIMP on Linux. Without a mask, one is wasting computation time. In some cases, it is useful to ignore some areas where one does not want tracking (for example if one is interested by traffic in only one direction). 
-** **important warning**: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors. 
-* The following parameters need to be set only if correcting for distortion (setting the undistort option to true when tracking): intrinsic camera and distortion coefficients (undistorted-multiplication is used only for display).
+To speed up the image processing, a mask can be defined to define the area of interest. The mask file should have the same resolution as the video frames and should be composed only of black and white pixels. Typically, media players can be used to save a single frame from the footage.
+
+> Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the “Video” tab, select “Take Snapshot” (the image is usually stored in the Pictures folder).
+
+Without a mask, one is wasting computation time and, in some cases, it is useful to ignore some areas where one does not want tracking (for example if one is interested by traffic in only one direction). 
+
+Using a photo-editing software, the frame can be used to create the mask. I typically use and recommend an image manipulation program with layers such as Photoshop, e.g. Paint.net on Windows and GIMP on Linux. The mask should be made in such a way that the white pixels correspond to the tracking area and black pixels the area to be discarded.
+
+> Using GIMP, simply open the frame, choose the “Free Select Tool,” create a new layer (Ctrl+Shift+N), fill the area of interest using the “Bucket Fill Tool” (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
+
+| Important warning: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors. |
+| --- |
