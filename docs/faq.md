@@ -1,5 +1,5 @@
-1. **library versions**: OpenCV 4.x, Python 3.x and recent versions of all Python libraries, installed through pip
-1. **paths to filenames in configuration files**: the main configuration file path should be relative to the location of the command line when starting any program (or absolute), but paths in configuration files should now be relative to the configuration file path. 
+1. **Library versions**: OpenCV 4.x, Python 3.x and recent versions of all Python libraries, installed through pip
+1. **Paths to filenames in configuration files**: the main configuration file path should be relative to the location of the command line when starting any program (or absolute), but paths in configuration files should now be relative to the configuration file path. 
+1. **Trajectory management and analysis tool**: this project used to be separately hosted and is now integrated in the main Traffic Intelligence repository after Btibucket shut down Mercurial.
 1. **Warning messages such as "Shapely library could not be loaded"**:
-
     This message is not an error. It only means what is printed, that the Python shapely module is not installed. In this particular case, the functions that depend on shapely have versions that function without it. In the case of the Python OpenCV library (module cv2), many functionalities (all in the provided cvutils module) will not function. To install a required module, see the following page in the [Polytechnique Transportation Wiki](http://www.polymtl.ca/wikitransport/index.php?title=PythonResources)
