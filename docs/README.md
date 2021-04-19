@@ -31,6 +31,7 @@ This software is being developed for many projects and purposes. This project co
 * Compilation and programming environment
     * [Programming style guide](http://wiki.polymtl.ca/transport/index.php/ProgrammingStyle)
     * [Compile the C++ Code|Compilation instructions](cpp-compilation.md) for the C++ code, in particular feature-based tracking
+	* The Python `trafficintelligence` library is available through pip, though not necessarily the latest: `pip install trafficintelligence` 
     * [[Install and Use the Python Modules and Scripts|How to use the provided Python modules and scripts]]: how to install a Python scientific distribution with the right modules, get and install the Python modules and scripts of Traffic Intelligence.
     * [[How to update configuration file|How to update configuration files]] (when a new program version requires to change the configuration file)
 * Data formats
