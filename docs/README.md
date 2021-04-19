@@ -3,6 +3,8 @@ Traffic Intelligence Project
 
 # News
 * After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solution I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self hosted for now at [http://132.207.98.161:3000](http://132.207.98.161:3000). I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
+** Main self-hosted [Traffic Intelligence Mercurial repository](http://132.207.98.161:3000/)
+** The Trajectory management and analysis tool project used to be separately hosted and is now integrated in the main Traffic Intelligence repository after Btibucket gave up on Mercurial.
 * February 2nd 2019: The C++ code has been updated to OpenCV4 (you also need to update the [trajectory management and analysis library](https://bitbucket.org/trajectories/trajectorymanagementandanalysis)). Python code seem to need no update as tests are passed. 
 * June 15th 2018: The Python code is now put in a trafficintelligence package (namespace) and can be installed in your Python dist-packages using pip.
 * June 13th 2018: Re-uploading the Laurier sample data and adding an example of videor with lens distortion, plus a metadata.sqlite file
@@ -28,7 +30,7 @@ This software is being developed for many projects and purposes. This project co
 * **[Frequently Asked Questions](faq.md)**
 * Compilation and programming environment
     * [Programming style guide](http://wiki.polymtl.ca/transport/index.php/ProgrammingStyle)
-    * [[Compile the C++ Code|Compilation instructions]] for the C++ code, in particular feature-based tracking
+    * [Compile the C++ Code|Compilation instructions](cpp-compilation.md) for the C++ code, in particular feature-based tracking
     * [[Install and Use the Python Modules and Scripts|How to use the provided Python modules and scripts]]: how to install a Python scientific distribution with the right modules, get and install the Python modules and scripts of Traffic Intelligence.
     * [[How to update configuration file|How to update configuration files]] (when a new program version requires to change the configuration file)
 * Data formats
