@@ -16,6 +16,7 @@ Here are finally some elements to understand the tracking parameters (that can b
 
 To evaluate performance, see [[Tracking Performance|tracking performance]].
 
+* P. Morse, P. St-Aubin, L. F. Miranda-Moreno, and N. Saunier. Transferability study of video tracking optimization for traffic data collection and analysis. In Transportation Research Board Annual Meeting Compendium of Papers, 2016. 16-6810
+
 ![Example of road user tracking](images/laurier-frame-27.png)
 
-* P. Morse, P. St-Aubin, L. F. Miranda-Moreno, and N. Saunier. Transferability study of video tracking optimization for traffic data collection and analysis. In Transportation Research Board Annual Meeting Compendium of Papers, 2016. 16-6810
