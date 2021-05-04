@@ -26,13 +26,13 @@ If you are correcting the camera distortion, you have to provide the necessary i
 
 To speed up the image processing, a mask can be defined to define the area of interest. The mask file should have the same resolution as the video frames and should be composed only of black and white pixels. Typically, media players can be used to save a single frame from the footage.
 
-> Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the “Video” tab, select “Take Snapshot” (the image is usually stored in the Pictures folder).
+Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the “Video” tab, select “Take Snapshot” (the image is usually stored in the Pictures folder).
 
 Without a mask, one is wasting computation time and, in some cases, it is useful to ignore some areas where one does not want tracking (for example if one is interested by traffic in only one direction). 
 
 Using a photo-editing software, the frame can be used to create the mask. I typically use and recommend an image manipulation program with layers such as Photoshop, e.g. Paint.net on Windows and GIMP on Linux. The mask should be made in such a way that the white pixels correspond to the tracking area and black pixels the area to be discarded.
 
-> Using GIMP, simply open the frame, choose the “Free Select Tool,” create a new layer (Ctrl+Shift+N), fill the area of interest using the “Bucket Fill Tool” (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
+Using GIMP, simply open the frame, choose the “Free Select Tool,” create a new layer (Ctrl+Shift+N), fill the area of interest using the “Bucket Fill Tool” (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
 
 | Important warning: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors. |
 | --- |
