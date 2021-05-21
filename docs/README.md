@@ -41,7 +41,7 @@ This software is being developed for many projects and purposes. This project co
     * [Tutorial](video-tracking-tutorial.md) to extract road user trajectories from video data
     * [Typical workflow](trajectory-extraction-workflow.md) to extract road user trajectories
     * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
-    * (Python) [[Loading Trajectory Data Extracted from Video using Python Libraries|Load and visualize some video tracking results]]
+    * (Python) [Load and visualize some video tracking results](loading-trajectory-data-extracted-from-video-using-trafficintelligence-python-library.ipynb)
     * (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
     * (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
 
