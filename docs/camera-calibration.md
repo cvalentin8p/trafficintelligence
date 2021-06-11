@@ -24,6 +24,8 @@ You can see, as shown below, the points used to obtain the provided homography m
 
 If you are correcting the camera distortion, you have to provide the necessary information (camera matrix and distortion coefficient) when computing the homography, which will be between the corrected image (in ideal point coordinates, non scaled as if seen by a camera) and the world plane. Sample calibrated camera matrices and coefficient coefficients are provided on http://www.polymtl.ca/wikitransport/index.php?title=Equipment#Camera_Matrices_and_Distortion_Coefficients and in metadata files (to be added). 
 
+Note that in this case, it is not as straightforward to manually create the point-correspondence file. One way is to use the compute-homography script to generate the image points in ideal space coordinates, regardless where one clicks in world space. Another is to use coordinates in image space and use the `--correspondences-imagepoints-in-image-space` option to generate the correct homography (from ideal point space to world space).
+
 To speed up the image processing, a mask can be defined to define the area of interest. The mask file should have the same resolution as the video frames and should be composed only of black and white pixels. Typically, media players can be used to save a single frame from the footage.
 
 Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the “Video” tab, select “Take Snapshot” (the image is usually stored in the Pictures folder).
