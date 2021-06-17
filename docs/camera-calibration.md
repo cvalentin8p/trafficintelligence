@@ -1,3 +1,4 @@
+# Camera Calibration
 For complete information and a recent method to calibrate a camera (see OpenCV documentation for example for a description of the pinhole camera model), you may look at the paper Ismail, K.; Sayed, T. & Saunier, N. A Methodology for Precise Camera Calibration for Data Collection Applications in Urban Traffic Scenes Canadian Journal of Civil Engineering, 2013, 40, 57-67.
 
 Traffic intelligence feature-based tracking algorithm relies only on a homography to project from the camera image space to the real world ground plane (assuming the ground level can be approximated by a plane). The homography is a 3x3 matrix that can be estimated from at least 4 non-colinear points visible in the field of view, with known coordinates. The typical method is to obtain an aerial view of the site with a known scale (through sites such as Google Maps) and to select pairs of corresponding points in both images. 
@@ -24,7 +25,7 @@ You can see, as shown below, the points used to obtain the provided homography m
 
 ![Example of homography computation](images/example-compute-homography.jpg)
 
-If you are correcting the camera distortion, you have to provide the necessary information (camera matrix and distortion coefficient) when computing the homography, which will be between the corrected image (in ideal point coordinates, non scaled as if seen by a camera) and the world plane. Sample calibrated camera matrices and coefficient coefficients are provided on http://www.polymtl.ca/wikitransport/index.php?title=Equipment#Camera_Matrices_and_Distortion_Coefficients and in metadata files (to be added). 
+If you are correcting the camera distortion, you have to provide the necessary information (camera matrix and distortion coefficient) when computing the homography, which will be between the corrected image (in ideal point coordinates, non scaled as if seen by a camera) and the world plane. Sample calibrated camera matrices and coefficient coefficients are provided further below and in metadata files (to be added). 
 
 Note that in this case, it is not as straightforward to manually create the point-correspondence file. One way is to use the compute-homography script to generate the image points in ideal space coordinates, regardless where one clicks in world space. Another is to use coordinates in image space and use the `--correspondences-imagepoints-in-image-space` option to generate the correct homography (from ideal point space to world space).
 
@@ -34,4 +35,72 @@ Using a photo-editing software, a video frame can be used to create the mask. I 
 
 Using GIMP, simply open the frame, choose the "Free Select Tool", create a new layer (Ctrl+Shift+N), fill the area of interest using the "Bucket Fill Tool" (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
 
-**Important warning**: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors.
+**Warning**: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors.
+
+# Camera Matrices and Distortion Coefficients
+
+**Warning**: Validate these parameters on your data before using them.
+
+With GoPro cameras, verify the FOV setting. Not all versions support the same FOVs.
+
+* Sample parameters for GoPro HD Hero2 1280*960 (In-house calibration), unknown FOV:
+
+```
+        camera_matrix = [[377.42, 0.0,     639.12],
+                         [0.0,    378.43,  490.20],
+                         [0.0,    0.0,     1.0]]
+        dist_coeffs = [-0.11759321,  0.0148536,  0.00030756, -0.00020578, -0.00091816]
+```
+
+* Sample parameters for GoPro HD Hero2 1280*720 http://www.htw-mechlab.de/index.php/undistortion-der-gopro-hd-hero2/:
+
+```        camera_matrix = [[469.96, 0.0,    640],
+                         [0.0,    467.68, 360],
+                         [0.0,    0.0,    1.0]]
+        dist_coeffs = [-0.18957, 0.037319, 0.0, 0.0, -0.00337]
+```
+
+* Sample parameters for GoPro HD Hero2 1920*1080 (In-house calibration), wide FOV:
+
+```    
+        camera_matrix = [[ 894.18, 0.0,    951.75],
+                         [   0.0,  913.20, 573.04],
+                         [   0.0,  0.0,    1.0]]
+        dist_coeffs   = [-0.35887,  0.16375, -0.00081, -0.00074, -0.04039]
+```
+
+* Sample parameters for GoPro HD Hero2 4K (In-house calibration):
+
+```
+        camera_matrix = [[  1.80151934e+03,   0.00000000e+00,   1.88663242e+03],
+                         [  0.00000000e+00,   1.80423487e+03,   1.48375206e+03],
+                         [  0.00000000e+00,   0.00000000e+00,   1.00000000e+00]]
+         dist_coeffs = [ -3.41396353e-01,   1.70761088e-01,   1.85596892e-05,   6.56168307e-04,  -5.22716120e-02]
+```
+
+* Sample parameters for GoPro HD Hero3 White 1280*960 (In-house calibration), "Ultra-Wide" (?) FOV:
+
+```
+        camera_matrix = [[568.82, 0.0,     630.27],
+                         [0.0,    565.51,  469.72],
+                         [0.0,    0.0,     1.0]]
+        dist_coeffs = [-0.25889354,  0.0812486 ,  0.00119071,  0.0044503 , -0.0119863]
+```
+
+* Sample parameters for GoPro HD Hero3 1280*720 (In-house calibration),  wide FOV:
+
+```
+   camera_matrix =[[ 843.83, 0.00,  939.77],
+                   [ 0.00,   843.67, 547.26],
+                   [ 0.00,   0.00,   1.00]]
+   dist_coeffs = [-2.62630520e-01, 1.20270201e-01, 2.23896448e-04, -5.21657471e-04, -3.68401697e-02]
+```
+
+* Sample parameters for GoPro HD Hero4 black 1280*720 (In-house calibration), ultra wide FOV:
+
+```
+   camera_matrix =[[ 584.95, 0.00,   635.12],
+                   [ 0.22,   584.42, 367.63],
+                   [ 0.00,   0.00,   1.00]]
+   dist_coeffs = [-0.26117408,  0.09197799, -0.00055912,  0.00033594, -0.01686286]
+```
