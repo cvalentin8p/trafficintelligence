@@ -2,7 +2,9 @@ For complete information and a recent method to calibrate a camera (see OpenCV d
 
 Traffic intelligence feature-based tracking algorithm relies only on a homography to project from the camera image space to the real world ground plane (assuming the ground level can be approximated by a plane). The homography is a 3x3 matrix that can be estimated from at least 4 non-colinear points visible in the field of view, with known coordinates. The typical method is to obtain an aerial view of the site with a known scale (through sites such as Google Maps) and to select pairs of corresponding points in both images. 
 
-The `compute-homography.py` script is provided for that purpose in the `scripts` directory in the repository. The script options can be obtained through the `-h` or `--help` options. The requirements are a video frame (where enough points of interest are visible), say `image.png`, and an aerial photo, say `world.png`, with known scale. The script should then be started with
+The `compute-homography.py` script is provided for that purpose in the `scripts` directory in the repository. The script options can be obtained through the `-h` or `--help` options. The requirements are a video frame (where enough points of interest are visible), say `image.png`, and an aerial photo, say `world.png`, with known scale. Typically, media players can be used to save a single image (frame) from the video recording. Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the "Video" tab, select "Take Snapshot" (the image is usually stored in the Pictures folder). You **cannot** do a screen shot simply of your screen, the resolution will be **wrong**. 
+
+The script should then be started with
 
 ```
 $ compute-homography.py -i image.png -w world.png -n npoints -u unitpixelratio
@@ -26,15 +28,10 @@ If you are correcting the camera distortion, you have to provide the necessary i
 
 Note that in this case, it is not as straightforward to manually create the point-correspondence file. One way is to use the compute-homography script to generate the image points in ideal space coordinates, regardless where one clicks in world space. Another is to use coordinates in image space and use the `--correspondences-imagepoints-in-image-space` option to generate the correct homography (from ideal point space to world space).
 
-To speed up the image processing, a mask can be defined to define the area of interest. The mask file should have the same resolution as the video frames and should be composed only of black and white pixels. Typically, media players can be used to save a single frame from the footage.
+To speed up the image processing, a mask can be defined to define the area of interest. The mask file should have the same resolution as the video frames and should be composed only of black and white pixels. Without a mask, one is wasting computation time and, in some cases, it is useful to ignore some areas where one does not want tracking (for example if one is interested by traffic in only one direction). 
 
-Using VLC, pause the video at a desired frame (ideally, without many vehicles hiding the identified points) and save the image. In the “Video” tab, select “Take Snapshot” (the image is usually stored in the Pictures folder).
+Using a photo-editing software, a video frame can be used to create the mask. I typically use and recommend an image manipulation program with layers such as Photoshop, e.g. Paint.net on Windows and GIMP on Linux. The mask should be made in such a way that the white pixels correspond to the tracking area and black pixels the area to be discarded.
 
-Without a mask, one is wasting computation time and, in some cases, it is useful to ignore some areas where one does not want tracking (for example if one is interested by traffic in only one direction). 
+Using GIMP, simply open the frame, choose the "Free Select Tool", create a new layer (Ctrl+Shift+N), fill the area of interest using the "Bucket Fill Tool" (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
 
-Using a photo-editing software, the frame can be used to create the mask. I typically use and recommend an image manipulation program with layers such as Photoshop, e.g. Paint.net on Windows and GIMP on Linux. The mask should be made in such a way that the white pixels correspond to the tracking area and black pixels the area to be discarded.
-
-Using GIMP, simply open the frame, choose the “Free Select Tool,” create a new layer (Ctrl+Shift+N), fill the area of interest using the “Bucket Fill Tool” (Shift+B) with white and, inverting the selection (Ctrl+I) and the selected colour, fill the discarded area with black.
-
-| Important warning: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors. |
-| --- |
+**Important warning**: in some cases, with camera distortion correction, tracking cannot be done in the periphery of the image (close to the borders) and should be verified with the undistort-video.py script; clearly erroneous high speeds are often related to such errors.
