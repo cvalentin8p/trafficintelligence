@@ -1,4 +1,4 @@
-To get the code, please go to http://132.207.98.161:3000/ to access the mercurial repository. The code can be cloned with the following command:
+To get the code, please go to [http://132.207.98.161:3000](http://132.207.98.161:3000/) to access the mercurial repository. The code can be cloned with the following command:
 
 ```
 $ hg clone http://132.207.98.161:3000/ <destination directory>
@@ -13,4 +13,6 @@ This software project provides a set of tools developed by [Nicolas Saunier](htt
 
 The code is licensed under the MIT open source license (http://www.opensource.org/licenses/mit-license).
 
-Contact me at nicolas.saunier[at]polymtl.ca and learn more about my work at https://nicolas.saunier.confins.net
+Contact me at nicolas.saunier [at] polymtl.ca.
+
+[https://trafficintelligence.confins.net](https://trafficintelligence.confins.net) redirects here. 
