@@ -1,3 +1,6 @@
+* June 15th 2018: The Python code is now put in a trafficintelligence package (namespace) and can be installed in your Python dist-packages using pip.
+* June 13th 2018: Re-uploading the Laurier sample data and adding an example of videor with lens distortion, plus a metadata.sqlite file
+* May 27th 2018: Brand new version with latest OpenCV3 and Python3 support. Please report bugs!
 * June 10th 2016: after initially switching to OpenCV3 (v3.1), we have backtracked (most recent v2.4.13) since there are issues with loading SVM classifiers. The current default version also includes changes in the tracking configuration file, moving the classification parameters to a new classifier.cfg file and making all parameters apparent there (they were hidden, ie default values in the code, previously). 
 * August 7th 2015: the script computer-clearmot.py now has the functionality to display the matches, missed ground truth instants and tracking false alarm with the --display option (and --mask if you want to restrict tracking to the mask used for annotations).
 * July 25th 2015: major news as Adrien Lessard, undergrad student, found that indexing one database accelerates by orders of magnitude the feature grouping, and I have finally found an old bug that had eluded so far. The result is several orders of magnitude faster (but only for grouping)!
