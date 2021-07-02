@@ -60,7 +60,7 @@ The code is licensed under the [MIT open source license](http://www.opensource.o
 
 # Acknowledgement
 
-Funding for these developments comes partially through the funding of the students listed on the [[Collaborators|collaborators' page]], supported by NSERC Grant No 402320-2011, FRQNT-MTQ-FRQS grant 2012-SO-163493 (road safety research program 2011-2014) and several MTQ research contracts.
+Funding for these developments comes partially through the funding of the students listed on the [contributors' page](contributors.md), supported by NSERC Grant No 402320-2011, FRQNT-MTQ-FRQS grant 2012-SO-163493 (road safety research program 2011-2014) and several MTQ research contracts.
 
 If you make use of this piece of software, please cite one of [our papers](https://nicolas.saunier.confins.net/#publications), for example
 
@@ -71,4 +71,4 @@ We would be very happy in any case to know about any use of the code, and to dis
 
 Contact me at nicolas.saunier[at]polymtl.ca and learn more about our work at https://nicolas.saunier.confins.net .
 
-Collaborators are listed on this [[Collaborators|page]].
+Contributors are listed on this [page](contributors.md).
