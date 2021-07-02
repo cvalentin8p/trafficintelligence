@@ -41,14 +41,14 @@ This software is being developed for many projects and purposes. This project co
     * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
     * (Python) [Tutorial to load and visualize some video tracking results](loading-trajectory-data-extracted-from-video-using-trafficintelligence-python-library.ipynb)
     * (Python) [Tutorial to detect a trajectory crossing a line or polygon](detecting-line-polygon-crossing.ipynb)
-    * (Python) [[Road User Classification|Various methods]] implemented for road user classification (work in progress)
+    * (Python) [Road User Classification](road-user-classification.md) implemented for road user classification
     * (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
 
 # Compiled Video Analysis Binary for Windows
 
 Linux is the preferred development platform. All Python code should work on all platforms where the required Python libraries are available. 
 
-Very old: An old 32 bit Windows binary for the tracker used to exist on the https://bitbucket.org/Nicolas/trafficintelligence/downloads (using the https://bitbucket.org/Nicolas/trafficintelligence/downloads/win32-depends.zip), but has not been updated. Please volunteer to contribute Windows binaries for the tracker.
+Old 32 bit Windows binaries for the tracker can still be found on the Bitbucket Mercurial archive provided by the nice people of Octobus (https://bitbucket-archive.softwareheritage.org/new-static/b5/b54b11eb-b7e2-4791-911d-c2aa3ccb07c5/attachments/). Please volunteer to contribute Windows binaries for the tracker.
 
 # Contribution
 
@@ -63,8 +63,9 @@ The code is licensed under the [MIT open source license](http://www.opensource.o
 Funding for these developments comes partially through the funding of the students listed on the [[Collaborators|collaborators' page]], supported by NSERC Grant No 402320-2011, FRQNT-MTQ-FRQS grant 2012-SO-163493 (road safety research program 2011-2014) and several MTQ research contracts.
 
 If you make use of this piece of software, please cite one of [our papers](https://nicolas.saunier.confins.net/#publications), for example
-* for the tracking software, S. Jackson, L. Miranda-Moreno, P. St-Aubin, and N. Saunier. A flexible, mobile video camera system and open source video analysis software for road safety and behavioural analysis. Transportation Research Record: Journal of the Transportation Research Board, 2365:90-98, 2013 http://dx.doi.org/10.3141/2365-12
-* for surrogate road safety analysis N. Saunier, T. Sayed and K. Ismail. Large Scale Automated Analysis of Vehicle Interactions and Collisions. Transportation Research Record: Journal of the Transportation Research Board, 2147:42-50, 2010 http://dx.doi.org/10.3141/2147-06
+
+* for the tracking software, S. Jackson, L. Miranda-Moreno, P. St-Aubin, and N. Saunier. A flexible, mobile video camera system and open source video analysis software for road safety and behavioural analysis. Transportation Research Record: Journal of the Transportation Research Board, 2365:90-98, 2013 https://dx.doi.org/10.3141/2365-12
+* for surrogate road safety analysis N. Saunier, T. Sayed and K. Ismail. Large Scale Automated Analysis of Vehicle Interactions and Collisions. Transportation Research Record: Journal of the Transportation Research Board, 2147:42-50, 2010 https://dx.doi.org/10.3141/2147-06
 
 We would be very happy in any case to know about any use of the code, and to discuss any opportunity for collaboration. 
 
