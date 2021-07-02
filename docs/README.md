@@ -69,6 +69,6 @@ If you make use of this piece of software, please cite one of [our papers](https
 
 We would be very happy in any case to know about any use of the code, and to discuss any opportunity for collaboration. 
 
-Contact me at nicolas.saunier[at]polymtl.ca and learn more about our work at https://nicolas.saunier.confins.net .
+Contact me at nicolas.saunier[at]polymtl.ca and learn more about our work at [https://nicolas.saunier.confins.net](https://nicolas.saunier.confins.net).
 
 Contributors are listed on this [page](contributors.md).
