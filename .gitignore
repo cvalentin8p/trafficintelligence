@@ -47,3 +47,7 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# manual
+docs/.ipynb_checkpoints/
+data/12-laurier
