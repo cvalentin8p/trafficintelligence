@@ -1,6 +1,7 @@
 Contributors to the Traffic Intelligence project include: 
 
 * Étienne Beauchamp, former Polytechnique master's student
+* Tertuis Ouédraogo, former MITACS Globalink intern at Polytechnique
 * [Jean-Philippe Jodoin](https://www.jpjodoin.com), former Polytechnique master's student
 * Alexandre Lacoffe, former Polytechnique master's student
 * Laurent Gauthier, former Polytechnique master's student
