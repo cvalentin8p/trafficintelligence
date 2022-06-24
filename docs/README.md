@@ -3,7 +3,7 @@ Traffic Intelligence Project
 
 # News
 * July 1st 2021: the Linux repository version of the OpenCV library (tested on Ubuntu) is sufficient to compile the tracker. 
-* After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solution I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self hosted for now at [http://132.207.98.161:3000](http://132.207.98.161:3000). I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
+* After Bitbucket shut down mercurial repositories in the Summer of 2020, here are the solutions I found. I strongly prefer Mercurial to Git, so will keep the code in this version control system, self-hosted for now at [http://132.207.98.161:3000](http://132.207.98.161:3000). I will keep this repository to link things and put the documentation back up in the main repository in the docs sub-directory.
     * Main self-hosted [Traffic Intelligence Mercurial repository](http://132.207.98.161:3000/)
     * The Trajectory management and analysis tool project used to be separately hosted and is now integrated in the main Traffic Intelligence repository after Btibucket gave up on Mercurial.
 * February 2nd 2019: The C++ code has been updated to OpenCV4 (you also need to update the [trajectory management and analysis library](https://bitbucket.org/trajectories/trajectorymanagementandanalysis)). Python code seem to need no update as tests are passed. 
@@ -38,7 +38,7 @@ This software is being developed for many projects and purposes. This project co
     * [Tutorial and information](camera-calibration.md) on camera calibration, homographies (how to use the provided script to create a homography) and distortion
     * [Tutorial](video-tracking-tutorial.md) to extract road user trajectories from video data
     * [Typical workflow](trajectory-extraction-workflow.md) to extract road user trajectories
-    * [Steps](tracking-optimization.md) to optimize tracking after cleaning the tracker output trajectories, eg using the [trajectory annotation tool](https://bitbucket.org/Wendlasida/trafficintelligenceannotationtool/) by Tertuis OuÃ©draogo
+    * [Steps](tracking-optimization.md) to optimize tracking after cleaning the tracker output trajectories, eg using the [trajectory annotation tool](https://bitbucket.org/Wendlasida/trafficintelligenceannotationtool/) by Tertuis Ou‚draogo
     * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
     * (Python) [Tutorial to load and visualize some video tracking results](loading-trajectory-data-extracted-from-video-using-trafficintelligence-python-library.ipynb)
     * (Python) [Tutorial to detect a trajectory crossing a line or polygon](detecting-line-polygon-crossing.ipynb)
