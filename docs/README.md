@@ -38,12 +38,12 @@ This software is being developed for many projects and purposes. This project co
     * [Tutorial and information](camera-calibration.md) on camera calibration, homographies (how to use the provided script to create a homography) and distortion
     * [Tutorial](video-tracking-tutorial.md) to extract road user trajectories from video data
     * [Typical workflow](trajectory-extraction-workflow.md) to extract road user trajectories
-    * [Steps](tracking-optimization.md) to optimize tracking after cleaning the tracker output trajectories, eg using the [trajectory annotation tool](https://bitbucket.org/Wendlasida/trafficintelligenceannotationtool/) by Tertuis Ou‚draogo
+    * [Steps](tracking-optimization.md) to optimize tracking after cleaning the tracker output trajectories, eg using the [trajectory annotation tool](https://bitbucket.org/Wendlasida/trafficintelligenceannotationtool/) by Tertuis Ouï¿½draogo
     * (Python) [[Loading NGSIM Data using Python Libraries|Simple example of loading road user trajectories from the NGSIM dataset]]
     * (Python) [Tutorial to load and visualize some video tracking results](loading-trajectory-data-extracted-from-video-using-trafficintelligence-python-library.ipynb)
     * (Python) [Tutorial to detect a trajectory crossing a line or polygon](detecting-line-polygon-crossing.ipynb)
     * (Python) [Road User Classification](road-user-classification.md) implemented for road user classification
-    * (Python) How to measure [[Tracking Performance|tracking performance]] (CLEAR MOT metrics)
+    * (Python) How to measure [Tracking Performance](tracking-performance.md) (CLEAR MOT metrics)
 
 # Compiled Video Analysis Binary for Windows
 
