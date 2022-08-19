@@ -18,7 +18,7 @@ You may also create manually the point-correspondence file and generate the homo
 As an example, you may use the `laurier-frame.png` and `laurier-world.png` from the Download page (in the zip archive [laurier.zip](https://bitbucket.org/Nicolas/trafficintelligence/downloads/12-laurier.zip), you can try it as follows:
 
 ```
-$ compute-homography.py -i laurier-frame.png -w laurier-world.png -n 4 -u 0.208333
+$ compute-homography.py -i laurier-frame.png -w laurier-world.png -n 4 -u 0.073529
 ```
 
 You can see, as shown below, the points used to obtain the provided homography matrix (stored in `laurier-homography.txt`) using the provided point correspondence file `point-correspondences.txt` by typing `compute-homography.py -i laurier-frame.png -w laurier-world.png -p point-correspondences.txt --display -u 0.208333` (these points are far from perfect as they do not cover the whole area that we may want to track). 
