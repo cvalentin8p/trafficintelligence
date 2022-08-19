@@ -15,7 +15,7 @@ where `npoints` is the number of corresponding points (can be omitted and will b
 
 You may also create manually the point-correspondence file and generate the homography from it (you can also add points this way if you are not happy with the current homography: save the current points correspondences, start the script again, and combine at will the corresponding points). 
 
-As an example, you may use the `laurier-frame.png` and `laurier-world.png` from the Download page (in the zip archive [laurier.zip](https://bitbucket.org/Nicolas/trafficintelligence/downloads/12-laurier.zip), you can try it as follows:
+As an example, you may use the `laurier-frame.png` and `laurier-world.png` from the Download page (in the zip archive [laurier.zip](../data/12-laurier.zip), you can try it as follows (with 5 m corresponding to 68 pixels):
 
 ```
 $ compute-homography.py -i laurier-frame.png -w laurier-world.png -n 4 -u 0.073529
