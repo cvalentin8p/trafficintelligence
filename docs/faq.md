@@ -3,3 +3,4 @@
 1. **Trajectory management and analysis tool**: this project used to be separately hosted and is now integrated in the main Traffic Intelligence repository after Btibucket shut down Mercurial.
 1. **Warning messages such as "Shapely library could not be loaded"**:
     This message is not an error. It only means what is printed, that the Python shapely module is not installed. In this particular case, the functions that depend on shapely have versions that function without it. In the case of the Python OpenCV library (module cv2), many functionalities (all in the provided cvutils module) will not function. To install a required module, see the following page in the [Polytechnique Transportation Wiki](http://www.polymtl.ca/wikitransport/index.php?title=PythonResources)
+1. [Data collection tips](https://www.polymtl.ca/wikitransport/index.php?title=Video_Data_Collection_How-to)

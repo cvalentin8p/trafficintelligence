@@ -1,7 +1,10 @@
 This page explains the typical workflow if trying different tracking parameters, in relationship to the data storage and the two steps, feature tracking and grouping:
 
 1. The feature grouping step will generate a SQLite database with the positions and velocities table. If running this step another time, you will see in the console repeated "rollback" messages, because the program tries to save the same data, with the same primary key and, rightly, fails. To generate new feature tracking results, one has to rename the SQLite file, change the output `database-filename` parameter or delete the SQLite file. 
+    * use the `feature-based-tracking` program with the `--tf` option
 2. The feature grouping step adds the tables objects_features and objects to represent the road users as sets of features. Again, if run twice, one will see "rollback" messages. However, since feature tracking is time-consuming while feature grouping runs much faster, if one wants to re-run only the grouping phase, one should not delete/rename the SQLite file or change the output `database-filename` parameter since the features will have to be re-computed. The solution is to delete the tables objects_features and objects either manually (open the database and execute the SQL command `drop table [table_name]`) or through the provided `delete-table.py` script.
+    * use the `feature-based-tracking` program with the `--gf` option
+    * seeing an error message that the `objects_features` table is missing from your database means you forgot this step
 3. **Optional step** if the tracking results are not adequate, you can adjust the tracking parameters in the `tracking.cfg` file, either manually by trial and error or with the `optimize-with-nomad.py` script in the scripts/nomad directory ([details](tracking-optimization.md)).
 
 Note that these steps should be done iteratively. You should track and group the features and immediately look at the resulting trajectories. Notably, verify that the projection on the world map is adequate and that the speed distributions are coherent before proceeding with subsequent analyses (prototypes and safety analysis).
