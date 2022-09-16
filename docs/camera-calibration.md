@@ -39,7 +39,9 @@ Using GIMP, simply open the frame, choose the "Free Select Tool", create a new l
 
 # Camera Matrices and Distortion Coefficients
 
-**Warning**: Validate these parameters on your data before using them.
+In-use camera parameters in the format of the metadata implemented in the `metadata` library are available in the [camera_types.csv](../data/camera_types.csv) file. 
+
+**Warning**: Validate these parameters on your data before using them. These are old model parameters. 
 
 With GoPro cameras, verify the FOV setting. Not all versions support the same FOVs.
 
