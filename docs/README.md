@@ -31,6 +31,11 @@ This software is being developed for many projects and purposes. This project co
     * [Compilation instructions](cpp-compilation.md) for the C++ code, in particular feature-based tracking
 	* It is highly recommended to clone the repository to get the latest version of the Python library `trafficintelligence` (but a less frequently updated version is available through pip: `pip install trafficintelligence`) 
     * [[Install and Use the Python Modules and Scripts|How to use the provided Python modules and scripts]]: how to install a Python scientific distribution with the right modules, get and install the Python modules and scripts of Traffic Intelligence.
+        * to import the Python library and, use the PYTHONPATH variable and to use the Python scripts as executables, make both locations accessible (the `trafficintelligence` directory (containing the Python modules) in the cloned directory and the directory containing the scripts, `/usr/local/bin` by default) and add the following to your shell configuration script, eg `.bashrc`
+```
+export PYTHONPATH=/path/to/traffic-intelligence:$PYTHONPATH
+export PATH=/usr/local/bin/:$HOME/.local/bin/:$PATH
+```
     * [[How to update configuration file|How to update configuration files]] (when a new program version requires to change the configuration file)
 * Data formats
     * [[Data Formats|Data formats]], especially the tables and fields in SQLite
