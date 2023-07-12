@@ -1,7 +1,7 @@
-To get the code, please go to [http://132.207.98.161:3000](http://132.207.98.161:3000/) to access the mercurial repository. The code can be cloned with the following command:
+To get the code, please go to [https://hg.reactionary.software/repo/traffic-intelligence/](https://hg.reactionary.software/repo/traffic-intelligence/) to access the mercurial repository (http://132.207.98.161:3000/ may not be online when rebooting). The code can be cloned with the following command:
 
 ```
-$ hg clone http://132.207.98.161:3000/ <destination directory>
+$ hg clone https://hg.reactionary.software/repo/traffic-intelligence/ <destination directory>
 ```
 
 The [documentation](docs/README.md) (previously a wiki) is coming back in the [docs](./docs) sub-folder.
