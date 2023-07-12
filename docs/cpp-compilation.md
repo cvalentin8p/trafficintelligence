@@ -25,7 +25,7 @@ On Windows, the [MinGW tools](http://tdm-gcc.tdragon.net/) are recommended.
 The code is now self-hosted since Bitbucket abandoned Mercurial. Clone the repository with the following command:
 
 ```
-$ hg clone http://132.207.98.161:3000/ <destination directory>
+$ hg clone https://hg.reactionary.software/repo/traffic-intelligence/ <destination directory>
 ```
 
 Note that using Mercurial will make it easier to update your code and enable you to contribute more easily to the project. For more information, see [PolyWikiTI](http://www.polymtl.ca/wikitransport/index.php?title=Mercurial).
